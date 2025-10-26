@@ -1,0 +1,54 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.venv/
+venv/
+env/
+.env
+.env.*
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.pytype/
+.ipynb_checkpoints/
+.cache/
+.coverage*
+
+# Streamlit
+.streamlit/
+.streamlit/secrets.toml
+
+# Logs and runtime artifacts
+*.log
+logs/
+waf_logs/
+demo_access.log
+production_demo_access.log
+demo_live_traffic.log
+live_waf_logs.log
+ecommerce_access.log
+
+# Notebooks auto-save
+*.nbconvert.ipynb
+
+# VS Code
+.vscode/
+
+# Node (if any)
+node_modules/
+
+# Java / Maven
+**/target/
+*.war
+*.jar
+
+# Docker local build artifacts
+**/.docker/

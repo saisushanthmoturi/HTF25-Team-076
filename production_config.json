@@ -1,0 +1,47 @@
+{
+  "security": {
+    "threat_threshold": 0.7,
+    "rate_limiting": {
+      "enabled": true,
+      "max_requests": 100,
+      "window": 60
+    },
+    "ip_whitelist": ["127.0.0.1", "localhost"],
+    "ip_blacklist": []
+  },
+  "logging": {
+    "level": "INFO",
+    "detailed": true,
+    "file": "/var/log/waf/waf.log",
+    "access_log": "/var/log/waf/access.log",
+    "attack_log": "/var/log/waf/attacks.log"
+  },
+  "monitoring": {
+    "enabled": true,
+    "metrics_port": 8001,
+    "dashboard_port": 8080
+  },
+  "applications": {
+    "blog-cms": {
+      "port": 8081,
+      "war_path": "./blog-cms-app/target/*.war",
+      "context": "/blog"
+    },
+    "ecommerce": {
+      "port": 8082,
+      "war_path": "./ecommerce-app/target/*.war",
+      "context": "/shop"
+    },
+    "rest-api": {
+      "port": 8083,
+      "war_path": "./rest-api-app/target/*.war",
+      "context": "/api"
+    }
+  },
+  "deployment": {
+    "tomcat_home": "/opt/tomcat",
+    "nginx_config": "/etc/nginx/sites-available/waf",
+    "ssl_enabled": false,
+    "proxy_mode": true
+  }
+}

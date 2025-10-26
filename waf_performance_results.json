@@ -1,0 +1,30 @@
+{
+  "total_requests": 500,
+  "successful_requests": 500,
+  "failed_requests": 0,
+  "success_rate": 100.0,
+  "response_time": {
+    "mean": 54.49205827713013,
+    "median": 54.840922355651855,
+    "min": 13.583898544311523,
+    "max": 91.92705154418945,
+    "p95": 88.62147331237793,
+    "p99": 91.41059875488281,
+    "std": 21.84727558653394
+  },
+  "throughput": {
+    "requests_per_second": 5439.0953653033175,
+    "avg_requests_per_second": 18.351297998587288
+  },
+  "security": {
+    "anomalies_detected": 88,
+    "detection_rate": 17.599999999999998,
+    "avg_anomaly_score": 0.2894315579183892,
+    "max_anomaly_score": 1.0,
+    "min_anomaly_score": 0.002215185895151496
+  },
+  "errors": {
+    "error_rate": 0.0,
+    "error_types": {}
+  }
+}
